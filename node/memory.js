@@ -4,7 +4,7 @@ exports.showMem = function showMem(){
         return (bytes/1024/1024) + 'MB';
     }
     console.log(`Process: heapTotal ${format(mem.heapTotal)} 
-                heapUsage ${format(mem.heapUsage)} 
+                heapUsage ${format(mem.heapUsed)} 
                 rss ${format(mem.rss)}`);
     console.log('---------------------------');
 }
